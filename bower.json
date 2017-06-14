@@ -1,0 +1,17 @@
+{
+  "name": "console-log",
+  "version": "1.0.0",
+  "description": "Logs output to Console\n\n",
+  "main": "console-log.html",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "dependencies": {
+    "polymer": "*"
+  },
+  "devDependencies": {
+    "iron-test-helpers": "*",
+    "web-component-tester": "^5.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../polymer/polymer.html">
+<!--
+  `<console-log></console-log>` Logs output to Console 
+  @demo demo.html
+-->
+<dom-module id="console-log">
+  <template>
+    <style>:host {display:inline-block;color:#666}</style>
+    <h2>Demo</h2>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: "console-log",
+    properties:{
+      __log:{
+        computed:"logme(log)",
+      },
+    },
+    logme: function(a){
+      return console.log(a) 
+    },
+  })
+</script>
