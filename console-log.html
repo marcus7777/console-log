@@ -7,8 +7,8 @@
   <template>
     <style>
       :host {
-        display:block;
         color:#fff;
+        display:block;
         background-color:#000;
         max-height:200px;
         overflow:auto;
@@ -34,8 +34,8 @@
     ready: function(){
       var that = this
       var cLog = console.log
-      console.log = function (log) {
-        that.output = that.output + "\n" + JSON.stringify(log)
+      console.log = function () {
+        that.output = JSON.stringify(arguments)
         cLog.apply(console, arguments)
       }
     }
