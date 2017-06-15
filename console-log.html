@@ -5,7 +5,15 @@
 -->
 <dom-module id="console-log">
   <template>
-    <style>:host {display:block;color:#fff;background-color:#000;}</style>
+    <style>
+      :host {
+        display:block;
+        color:#fff;
+        background-color:#000;
+        max-height:200px;
+        overflow:auto;
+      }
+    </style>
     <pre>[[output]]</pre>
   </template>
 </dom-module>
