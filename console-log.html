@@ -24,7 +24,7 @@
       var that = this
       var cLog = console.log
       console.log = function (log) {
-        that.output = that.output + "/n" + JSON.stringify(log)
+        that.output = that.output + "\n" + JSON.stringify(log)
         cLog.apply(console, arguments)
       }
       return console.log(a) 
