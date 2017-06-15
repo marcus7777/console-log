@@ -1,7 +1,7 @@
 {
   "name": "console-log",
   "version": "1.0.0",
-  "description": "Logs output to Console\n\n",
+  "description": "Logs output to Console",
   "main": "console-log.html",
   "keywords": [
     "polymer",
