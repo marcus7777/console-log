@@ -35,7 +35,10 @@
       var that = this
       var cLog = console.log
       console.log = function () {
-        that.output = JSON.stringify(arguments)
+        that.output = that.output + ""
+        for (var argument in arguments) {
+          that.output = that.output + JSON.stringify(argument)
+        }
         cLog.apply(console, arguments)
       }
     }
