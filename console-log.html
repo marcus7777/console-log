@@ -29,13 +29,13 @@
       }
     },
     logme: function(a){
-      return console.log(a) 
+      console.log(a)
     },
     ready: function(){
       var that = this
       var cLog = console.log
       console.log = function () {
-        that.output = that.output + ""
+        that.output = that.output + "/n"
         for (var argument in arguments) {
           that.output = that.output + JSON.stringify(arguments[argument])
         }
